@@ -6,23 +6,23 @@ public class Workout()
   private int sets;
   private int numLifts;
   
-  public Workout(String d, String w, int r, int s)
+  public Workout(String d)
   {
     days = d;
-    workout = w;
-    setReps(r);
-    SetSets(s);
+    setWorkout();
+    setReps();
+    SetSets();
   }
   public Workout()
   {
-    System.out.println("Please Enter the following fields: Day, Workout, Reps, and Sets");
+    System.out.println("Please Enter the day of the week: ");
     /*
     *scanner method for entry of values from GUI
     */
   }
   public String toString()
   {
-      return "Day: " + days + "\n lifts: " + workoutList();
+      return "[Day]\n" + days + "\n [lifts]\n" + workoutList();
   }
     //Setters
     public setReps(int r)
@@ -37,6 +37,7 @@ public class Workout()
     {
       workout = //scanmethod
     }
+    //Setters
     //Getters
     public int getReps()
     {
@@ -46,6 +47,19 @@ public class Workout()
     {
         return sets;
     }
+    //Getters
+    //Input
+    public repsInput()
+    {
+     System.out.println("Enter number of reps: ");
+     reps = Scan.nextInt();
+    }
+    public setsInput()
+    {
+     System.out.println("Enter number of sets: ");
+     sets = Scan.nextInt();
+    }
+  //Input
     public workoutList()
     {
       While (numLifts > 0)
@@ -56,7 +70,8 @@ public class Workout()
       }
       While (numLifts > 0)
       {
-        System.out.print("\n" + reps + " X " + sets);
+        System.out.print("\n\t\t\t" + repsInput() + " X " + setsInput() + "\t\t");
       }
+      
     }
 }
