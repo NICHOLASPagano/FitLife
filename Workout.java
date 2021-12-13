@@ -33,6 +33,10 @@ public class Workout()
     {
         sets = s
     }
+    public setWorkout()
+    {
+      workout = //scanmethod
+    }
     //Getters
     public int getReps()
     {
@@ -41,5 +45,18 @@ public class Workout()
     public int getSets()
     {
         return sets;
+    }
+    public workoutList()
+    {
+      While (numLifts > 0)
+      {
+        System.out.print("|" + workout + "|   ");
+        numLifts--;
+        setWorkout();
+      }
+      While (numLifts > 0)
+      {
+        System.out.print("\n" + reps + " X " + sets);
+      }
     }
 }
